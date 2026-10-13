@@ -1,13 +1,12 @@
 class Solution:
     def removeDuplicates(self, nums: list[int]) -> int:
-        i = 0
-        j = 1
+        i = 0  # CMT: Points to the last unique element
+        j = 1  # CMT: Checks the next element
 
-        while j < len(nums):
-            if nums[i] != nums[j]:
-                i += 1
-                nums[i] = nums[j]
-            j += 1
-        return i + 1
+        while j < len(nums):  # CMT: Loop through the array
+            if nums[i] != nums[j]:  # CMT: Check if the element is unique
+                i += 1  # CMT: Move to the next position
+                nums[i] = nums[j]  # CMT: Store the unique element
+            j += 1  # CMT: Move to the next element
 
-        
+        return i + 1  # CMT: Return the count of unique elements

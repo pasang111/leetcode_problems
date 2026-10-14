@@ -1,11 +1,10 @@
 class Solution:
     def reverseString(self, s: list[str]) -> None:
+        i = 0  # Start pointer
+        j = len(s) - 1  # End pointer
 
-        i = 0
-        j = len(s) - 1
+        while i < j:  # Continue until pointers meet
+            s[i], s[j] = s[j], s[i]  # Swap characters
 
-        while i < j:
-            s[i], s[j] = s[j], s[i]
-
-            i += 1
-            j -= 1
+            i += 1  # Move start pointer forward
+            j -= 1  # Move end pointer backward

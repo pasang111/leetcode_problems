@@ -10,3 +10,5 @@ class Solution:
             j += 1  # CMT: Move to the next element
 
         return i + 1  # CMT: Return the count of unique elements
+
+#solutions

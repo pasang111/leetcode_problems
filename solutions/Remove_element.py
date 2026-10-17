@@ -9,4 +9,4 @@ class Solution:
                 i += 1  # Move to the next position
             j += 1  # Check the next element
 
-        return i  # Return the number of valid elements
+        return i  # Return the number of valid element

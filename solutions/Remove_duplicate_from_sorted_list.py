@@ -9,6 +9,6 @@ class Solution:
                 nums[i] = nums[j]  # CMT: Store the unique element
             j += 1  # CMT: Move to the next element
 
-        return i + 1  # CMT: Return the count of unique elements
+        return i + 1  # CMT: Return the count of unique element
 
 #solutions
